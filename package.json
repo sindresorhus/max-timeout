@@ -1,0 +1,35 @@
+{
+  "name": "max-timeout",
+  "version": "0.0.0",
+  "description": "The max amount of milliseconds you can pass to `setTimeout()`",
+  "license": "MIT",
+  "repository": "sindresorhus/max-timeout",
+  "author": {
+    "name": "Sindre Sorhus",
+    "email": "sindresorhus@gmail.com",
+    "url": "sindresorhus.com"
+  },
+  "engines": {
+    "node": ">=0.10.0"
+  },
+  "scripts": {
+    "test": "xo && ava"
+  },
+  "files": [
+    "index.js"
+  ],
+  "keywords": [
+    "max",
+    "maximum",
+    "timeout",
+    "settimeout",
+    "delay",
+    "overflow",
+    "number",
+    "constant"
+  ],
+  "devDependencies": {
+    "ava": "*",
+    "xo": "*"
+  }
+}
