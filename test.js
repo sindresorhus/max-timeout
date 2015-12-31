@@ -1,12 +1,12 @@
 import test from 'ava';
 import x from './';
 
-test('works', t => {
+test.cb('works', t => {
 	setTimeout(() => t.fail(), x);
 	setTimeout(() => t.end(), 100);
 });
 
-test('overflows', t => {
+test.cb('overflows', t => {
 	const now = Date.now();
 
 	const id = setTimeout(() => {
