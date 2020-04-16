@@ -1,8 +1,8 @@
 import test from 'ava';
-import x from './';
+import maxTimeout from '.';
 
 test.cb('works', t => {
-	setTimeout(() => t.fail(), x);
+	setTimeout(() => t.fail(), maxTimeout);
 	setTimeout(() => t.end(), 100);
 });
 
@@ -11,7 +11,7 @@ test.cb('overflows', t => {
 
 	const id = setTimeout(() => {
 		t.true(Date.now() - now < 10);
-	}, x + 1);
+	}, maxTimeout + 1);
 
 	// ensure it always finishes
 	setTimeout(() => {
