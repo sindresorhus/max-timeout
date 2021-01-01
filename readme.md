@@ -1,4 +1,4 @@
-# max-timeout [![Build Status](https://travis-ci.com/sindresorhus/max-timeout.svg?branch=master)](https://travis-ci.com/sindresorhus/max-timeout)
+# max-timeout
 
 > The max amount of milliseconds you can pass to `setTimeout()`
 
