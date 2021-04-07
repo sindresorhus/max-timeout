@@ -13,7 +13,7 @@ $ npm install max-timeout
 ## Usage
 
 ```js
-const maxTimeout = require('max-timeout');
+import maxTimeout from 'max-timeout';
 
 setTimeout(() => {}, maxTimeout);
 ```

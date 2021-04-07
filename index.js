@@ -1,2 +1,3 @@
-'use strict';
-module.exports = 2147483647;
+const maxTimeout = 2147483647;
+
+export default maxTimeout;

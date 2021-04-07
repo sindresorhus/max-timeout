@@ -1,5 +1,5 @@
 import test from 'ava';
-import maxTimeout from '.';
+import maxTimeout from './index.js';
 
 test.cb('works', t => {
 	setTimeout(() => t.fail(), maxTimeout);
@@ -13,7 +13,7 @@ test.cb('overflows', t => {
 		t.true(Date.now() - now < 10);
 	}, maxTimeout + 1);
 
-	// ensure it always finishes
+	// Ensure it always finishes.
 	setTimeout(() => {
 		clearTimeout(id);
 		t.end();
